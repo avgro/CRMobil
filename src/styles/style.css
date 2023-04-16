@@ -1,8 +1,27 @@
+body {
+ background: #ffffff;
+}
+body::before {
+ display: block;
+ content: "";
+ height: 60px;
+}
+
 .navbar-brand {
  color: #0074c4;
- font-size: 25px;
+ font-size: 30px;
  font-weight: bold;
 }
+
+.logo {
+ width: 50px;
+ margin-right: 10px;
+}
+
+.navbar-brand:hover {
+ color: #0074c4;
+}
+
 .navbar-toggler {
  width: 20px;
  height: 20px;
@@ -73,8 +92,95 @@
 
 #btn-login {
  color: #0074c4;
+
  text-decoration: none;
  margin-left: 30px;
  font-weight: bold;
  font-size: 22px;
+}
+#btn-login:hover {
+ color: #e6e6e6;
+ transition: 0.2s;
+}
+.conheca {
+ color: #0074c4;
+ font-weight: bold;
+}
+
+/*Conteúdo Principal*/
+
+.conteudo-principal {
+ background: #00385e;
+}
+
+/*Newsletter*/
+.newsletter {
+ background: #0092f7;
+ font-weight: bold;
+}
+
+@media (min-width: 768px) {
+ .news-input {
+  width: 50%;
+ }
+}
+
+/*Cards*/
+
+#cartoes {
+ background: #e6e6e6;
+}
+.saiba-mais {
+ text-decoration: none;
+ color: #0092f7;
+ font-size: 18px;
+}
+.saiba-mais:hover {
+ color: white;
+ transition: 0.2s;
+}
+
+/*Atividades*/
+
+#atividades {
+}
+
+/*Atualizacao*/
+#atualizacao {
+ background: #00385e;
+}
+
+/*Clientes*/
+#clientes {
+ background: #00385e;
+}
+
+/*Mapa*/
+
+.mapa {
+ overflow: hidden;
+
+ padding-bottom: 56.25%;
+
+ position: relative;
+
+ height: 0;
+}
+
+.mapa iframe {
+ left: 0;
+
+ top: 0;
+
+ height: 100%;
+
+ width: 100%;
+
+ position: absolute;
+}
+
+/*Footer*/
+
+footer {
+ background: #00385e;
 }
