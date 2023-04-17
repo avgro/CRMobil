@@ -1,5 +1,15 @@
+/*Variáveis*/
+
+:root {
+ --cor-principal: #00385e;
+ --cor-secundaria: #0092f7;
+ --cor-terciaria: #0074c4;
+ --cor-cinza: #e6e6e6;
+ --cor-fundo: #ffffff;
+}
+
 body {
- background: #ffffff;
+ background: var(--cor-fundo);
 }
 body::before {
  display: block;
@@ -8,7 +18,7 @@ body::before {
 }
 
 .navbar-brand {
- color: #0074c4;
+ color: var(--cor-terciaria);
  font-size: 30px;
  font-weight: bold;
 }
@@ -19,7 +29,7 @@ body::before {
 }
 
 .navbar-brand:hover {
- color: #0074c4;
+ color: var(--cor-terciaria);
 }
 
 .navbar-toggler {
@@ -48,7 +58,7 @@ body::before {
  position: absolute;
  height: 3px;
  width: 100%;
- background: #0074c4;
+ background: var(--cor-terciaria);
  border-radius: 5px;
  opacity: 1;
  left: 0;
@@ -91,7 +101,7 @@ body::before {
 }
 
 #btn-login {
- color: #0074c4;
+ color: var(--cor-terciaria);
 
  text-decoration: none;
  margin-left: 30px;
@@ -99,23 +109,23 @@ body::before {
  font-size: 22px;
 }
 #btn-login:hover {
- color: #e6e6e6;
+ color: var(--cor-cinza);
  transition: 0.2s;
 }
 .conheca {
- color: #0074c4;
+ color: var(--cor-terciaria);
  font-weight: bold;
 }
 
 /*Conteúdo Principal*/
 
 .conteudo-principal {
- background: #00385e;
+ background: var(--cor-principal);
 }
 
 /*Newsletter*/
 .newsletter {
- background: #0092f7;
+ background: var(--cor-secundaria);
  font-weight: bold;
 }
 
@@ -128,15 +138,15 @@ body::before {
 /*Cards*/
 
 #cartoes {
- background: #e6e6e6;
+ background: var(--cor-cinza);
 }
 .saiba-mais {
  text-decoration: none;
- color: #0092f7;
+ color: var(--cor-secundaria);
  font-size: 18px;
 }
 .saiba-mais:hover {
- color: white;
+ color: var(--cor-fundo);
  transition: 0.2s;
 }
 
@@ -147,12 +157,12 @@ body::before {
 
 /*Atualizacao*/
 #atualizacao {
- background: #00385e;
+ background: var(--cor-principal);
 }
 
 /*Clientes*/
 #clientes {
- background: #00385e;
+ background: var(--cor-principal);
 }
 
 /*Mapa*/
@@ -182,5 +192,5 @@ body::before {
 /*Footer*/
 
 footer {
- background: #00385e;
+ background: var(--cor-principal);
 }
